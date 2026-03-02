@@ -33,7 +33,7 @@ Instructions are comma-separated. The specific casing of each word dictates the 
 | just   | [                    | Jump forward if byte is 0      |
 | Just   | ]                    | Jump backward if byte is not 0 |
 
-## Example: Hello World
+## Example: ~Hello World~ Just Monika
 
 The following `.chr` code is a standard implementation of ~"Hello World!"~ "Just Monika.":
 
