@@ -27,8 +27,12 @@ Commands are separated by commas. Monika variations are mapped to the most commo
 
 Run a script using the provided runner:
 
-python monika.py script.chr
+```python3
+python3 monika.py script.chr
+```
 
 ## Sample
-
-Check hello.chr for a Hello World implementation using comma-separated casing commands.
+Printing "Hello World!" in Just Monika:
+```
+MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, just, Monika, MONIKA, MONIKA, MONIKA, MONIKA, just, Monika, MONIKA, MONIKA, Monika, MONIKA, MONIKA, MONIKA, Monika, MONIKA, MONIKA, MONIKA, Monika, MONIKA, mOnIkA, mOnIkA, mOnIkA, mOnIkA, monika, Just, Monika, MONIKA, Monika, MONIKA, Monika, monika, Monika, Monika, MONIKA, just, mOnIkA, Just, mOnIkA, monika, Just, Monika, Monika, JUST, Monika, monika, monika, monika, JUST, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, JUST, JUST, MONIKA, MONIKA, MONIKA, JUST, Monika, Monika, JUST, mOnIkA, monika, JUST, mOnIkA, JUST, MONIKA, MONIKA, MONIKA, JUST, monika, monika, monika, monika, monika, monika, JUST, monika, monika, monika, monika, monika, monika, monika, monika, JUST, Monika, Monika, MONIKA, JUST, Monika, MONIKA, MONIKA, JUST
+```
