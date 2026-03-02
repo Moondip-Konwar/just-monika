@@ -35,10 +35,10 @@ Instructions are comma-separated. The specific casing of each word dictates the 
 
 ## Example: Hello World
 
-The following `.chr` code is a standard implementation of "Hello World!":
+The following `.chr` code is a standard implementation of ~"Hello World!"~ "Just Monika.":
 
 ```
-MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, just, Monika, MONIKA, MONIKA, MONIKA, MONIKA, just, Monika, MONIKA, MONIKA, Monika, MONIKA, MONIKA, MONIKA, Monika, MONIKA, MONIKA, MONIKA, Monika, MONIKA, mOnIkA, mOnIkA, mOnIkA, mOnIkA, monika, Just, Monika, MONIKA, Monika, MONIKA, Monika, monika, Monika, Monika, MONIKA, just, mOnIkA, Just, mOnIkA, monika, Just, Monika, Monika, JUST, Monika, monika, monika, monika, JUST, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, JUST, JUST, MONIKA, MONIKA, MONIKA, JUST, Monika, Monika, JUST, mOnIkA, monika, JUST, mOnIkA, JUST, MONIKA, MONIKA, MONIKA, JUST, monika, monika, monika, monika, monika, monika, JUST, monika, monika, monika, monika, monika, monika, monika, monika, JUST, Monika, Monika, MONIKA, JUST, Monika, MONIKA, MONIKA, JUST
+monika, just, monika, monika, monika, monika, monika, monika, monika, Monika, MONIKA, mOnIkA, Just, Monika, MONIKA, JUST, monika, just, monika, monika, monika, monika, monika, Monika, MONIKA, mOnIkA, Just, Monika, JUST, monika, monika, JUST, MONIKA, JUST, just, monika, monika, monika, monika, Monika, MONIKA, mOnIkA, Just, Monika, MONIKA, MONIKA, MONIKA, JUST, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, just, monika, Monika, MONIKA, MONIKA, mOnIkA, Just, Monika, MONIKA, JUST, just, monika, monika, monika, Monika, MONIKA, mOnIkA, Just, Monika, JUST, monika, JUST, monika, monika, monika, monika, monika, JUST, MONIKA, MONIKA, JUST, monika, monika, monika, monika, monika, monika, monika, monika, monika, monika, JUST, monika, just, monika, monika, Monika, MONIKA, mOnIkA, Just, Monika, monika, monika, JUST, Monika, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, JUST
 ```
 
 ## Usage
@@ -63,5 +63,5 @@ The JustMonika interpreter is implemented in Python. While the runtime is Python
 ### monika.bf
 
 ```brainfuck
-++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.
+-[------->+<]>+.-[----->+<]>.--.+.[---->+<]>+++.++++++[->++<]>+.[--->+<]>.-.-----.++.----------.-[-->+<]>--.>++++++++++.
 ```
