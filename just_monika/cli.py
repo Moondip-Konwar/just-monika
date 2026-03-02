@@ -1,5 +1,5 @@
 import sys
-from just_monika.lexer import tokenize, get_commands
+from just_monika.lexer import tokenize
 from just_monika.interpreter import Interpreter
 
 def main():
@@ -12,8 +12,7 @@ def main():
         print("Just Monika (.chr)")
         return
 
-    tokens = tokenize(file_path)
-    commands = get_commands(tokens)
+    commands = tokenize(file_path)
     
     interpreter = Interpreter(commands)
     interpreter.run()
