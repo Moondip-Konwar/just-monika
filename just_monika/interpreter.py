@@ -15,6 +15,9 @@ class Interpreter:
             if cmd == '[':
                 stack.append(i)
             elif cmd == ']':
+                if not stack:
+                    # Just Monika doesn't care about balanced loops, but we should handle it
+                    continue
                 start = stack.pop()
                 mapping[start] = i
                 mapping[i] = start
@@ -24,9 +27,9 @@ class Interpreter:
         while self.pc < len(self.commands):
             cmd = self.commands[self.pc]
             if cmd == '>':
-                self.ptr += 1
+                self.ptr = (self.ptr + 1) % len(self.tape)
             elif cmd == '<':
-                self.ptr -= 1
+                self.ptr = (self.ptr - 1) % len(self.tape)
             elif cmd == '+':
                 self.tape[self.ptr] = (self.tape[self.ptr] + 1) % 256
             elif cmd == '-':
@@ -39,8 +42,8 @@ class Interpreter:
                 self.tape[self.ptr] = ord(char) if char else 0
             elif cmd == '[':
                 if self.tape[self.ptr] == 0:
-                    self.pc = self.loop_map[self.pc]
+                    self.pc = self.loop_map.get(self.pc, self.pc)
             elif cmd == ']':
                 if self.tape[self.ptr] != 0:
-                    self.pc = self.loop_map[self.pc]
+                    self.pc = self.loop_map.get(self.pc, self.pc)
             self.pc += 1
