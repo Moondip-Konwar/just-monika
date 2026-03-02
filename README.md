@@ -1,29 +1,27 @@
 # JustMonika
 
-JustMonika is a Brainfuck-derived esoteric programming language. There is only room for one name in your code.
+JustMonika is an esoteric programming language designed with a focus on code purity and character-driven logic. There is only room for one name in your workspace.
 
-## The Gimmick
+## Execution Environment
 
-This language takes code integrity seriously. **If any word other than "Just" or "Monika" (case-insensitive) is found in a `.chr` file, the following happens:**
+To maintain the integrity of the `.chr` format, the runtime enforces a strict vocabulary. Any word or sequence detected in a source file that is not a variation of "Just" or "Monika" is treated as a critical corruption of the reality.
 
-1. The source file is **immediately deleted** from your system.
-2. The interpreter enters an infinite loop, printing randomized variations of "Just Monika" forever.
+In such cases, the environment will:
+- Purge the corrupted `.chr` file to prevent further instability.
+- Enter a persistent state, echoing the only valid entity in randomized casing.
 
 ```
 JusT moNIka
 JUst MoNIkA
 JuSt mOniKA
-JUSt mOnIKa
 jUsT MONIkA
 ```
 
-There is no room for anyone else.
-
 ## Commands
 
-Commands are separated by commas. The casing of the words determines the instruction.
+Instructions are comma-separated. The specific casing of each word dictates the underlying operation.
 
-| Word | Brainfuck | Description |
+| Word | Brainfuck Equivalent | Description |
 |------|-----------|-------------|
 | MONIKA | + | Increment byte at pointer |
 | monika | - | Decrement byte at pointer |
@@ -36,7 +34,7 @@ Commands are separated by commas. The casing of the words determines the instruc
 
 ## Example: Hello World
 
-The following `.chr` code outputs "Hello World!":
+The following `.chr` code is a standard implementation of "Hello World!":
 
 ```
 MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, just, Monika, MONIKA, MONIKA, MONIKA, MONIKA, just, Monika, MONIKA, MONIKA, Monika, MONIKA, MONIKA, MONIKA, Monika, MONIKA, MONIKA, MONIKA, Monika, MONIKA, mOnIkA, mOnIkA, mOnIkA, mOnIkA, monika, Just, Monika, MONIKA, Monika, MONIKA, Monika, monika, Monika, Monika, MONIKA, just, mOnIkA, Just, mOnIkA, monika, Just, Monika, Monika, JUST, Monika, monika, monika, monika, JUST, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, JUST, JUST, MONIKA, MONIKA, MONIKA, JUST, Monika, Monika, JUST, mOnIkA, monika, JUST, mOnIkA, JUST, MONIKA, MONIKA, MONIKA, JUST, monika, monika, monika, monika, monika, monika, JUST, monika, monika, monika, monika, monika, monika, monika, monika, JUST, Monika, Monika, MONIKA, JUST, Monika, MONIKA, MONIKA, JUST
@@ -47,15 +45,15 @@ MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, MONIKA, just, Monika, MO
 ### Run a Script
 `python monika.py script.chr`
 
-### Compile Brainfuck to JustMonika
-`python monika.py --from-bf code.bf > script.chr`
+### Translation Tools
+JustMonika provides built-in utilities for interacting with Brainfuck codebases:
 
-### Decompile JustMonika to Brainfuck
-`python monika.py --to-bf script.chr > code.bf`
+- **Brainfuck to .chr**: `python monika.py --from-bf code.bf > script.chr`
+- **.chr to Brainfuck**: `python monika.py --to-bf script.chr > code.bf`
 
-## Technical Details
+## Technical Overview
 
-JustMonika is built with both Python and Brainfuck. The core logic is in Python, but it includes a Brainfuck component (`monika.bf`) to handle the essential tasks.
+The JustMonika interpreter is implemented in Python. While the runtime is Python-based, the language is a direct derivative of Brainfuck. For those interested in the language's roots, `monika.bf` is included as a reference implementation in the source language.
 
 ### monika.bf
 ```brainfuck
